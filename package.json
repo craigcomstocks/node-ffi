@@ -17,7 +17,7 @@
     "binding",
     "c"
   ],
-  "homepage": "http://github.com/node-ffi/node-ffi",
+  "homepage": "http://github.com/craigcomstocks/node-ffi",
   "engines": {
     "node": ">=0.10.0"
   },
@@ -25,9 +25,10 @@
   "dependencies": {
     "bindings": "~1.2.0",
     "debug": "2",
+    "nan": "2",
+    "node-pre-gyp": "^0.6.32",
     "ref": "1",
-    "ref-struct": "1",
-    "nan": "2"
+    "ref-struct": "1"
   },
   "devDependencies": {
     "fs-extra": "^0.23.1",
@@ -35,13 +36,21 @@
     "ref-array": "1"
   },
   "scripts": {
+    "preinstall": "npm install node-pre-gyp",
+    "install": "node-pre-gyp install --fallback-to-build",
     "test": "node-gyp rebuild --directory test && mocha -gc --reporter spec"
+  },
+  "binary": {
+    "module_name": "ffi_bindings",
+    "module_path": "./lib/binding/",
+    "host": "https://github.com/craigcomstocks/node-ffi/releases/download/",
+    "remote_path": "{version}"
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/node-ffi/node-ffi.git"
+    "url": "https://github.com/craigcomstocks/node-ffi.git"
   },
   "bugs": {
-    "url": "http://github.com/node-ffi/node-ffi/issues"
+    "url": "http://github.com/craigcomstocks/node-ffi/issues"
   }
 }
