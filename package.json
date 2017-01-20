@@ -23,10 +23,9 @@
   },
   "main": "./lib/ffi",
   "dependencies": {
-    "bindings": "~1.2.0",
+    "bindings": "craigcomstocks/node-bindings#find-by-abi",
     "debug": "2",
     "nan": "2",
-    "node-pre-gyp": "^0.6.32",
     "ref": "1",
     "ref-struct": "1"
   },
@@ -36,15 +35,8 @@
     "ref-array": "1"
   },
   "scripts": {
-    "preinstall": "npm install node-pre-gyp",
-    "install": "node-pre-gyp install --fallback-to-build",
-    "test": "node-gyp rebuild --directory test && mocha -gc --reporter spec"
-  },
-  "binary": {
-    "module_name": "ffi",
-    "module_path": "./lib/binding/",
-    "host": "https://github.com/craigcomstocks/node-ffi/releases/download/",
-    "remote_path": "{version}"
+    "test": "node-gyp rebuild --directory test && mocha -gc --reporter spec",
+    "install": "echo"
   },
   "repository": {
     "type": "git",
