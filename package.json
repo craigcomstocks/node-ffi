@@ -41,7 +41,7 @@
     "test": "node-gyp rebuild --directory test && mocha -gc --reporter spec"
   },
   "binary": {
-    "module_name": "ffi_bindings",
+    "module_name": "ffi",
     "module_path": "./lib/binding/",
     "host": "https://github.com/craigcomstocks/node-ffi/tree/master/releases/download/",
     "remote_path": "{version}"
