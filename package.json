@@ -26,7 +26,7 @@
     "bindings": "craigcomstocks/node-bindings#find-by-abi",
     "debug": "2",
     "nan": "2",
-    "ref": "1",
+    "ref": "craigcomstocks/ref#find-by-abi",
     "ref-struct": "1"
   },
   "devDependencies": {
@@ -36,7 +36,8 @@
   },
   "scripts": {
     "test": "node-gyp rebuild --directory test && mocha -gc --reporter spec",
-    "install": "echo"
+    "install": "echo",
+    "build": "node-gyp rebuild"
   },
   "repository": {
     "type": "git",
