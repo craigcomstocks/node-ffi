@@ -43,7 +43,7 @@
   "binary": {
     "module_name": "ffi",
     "module_path": "./lib/binding/",
-    "host": "https://github.com/craigcomstocks/node-ffi/tree/master/releases/download/",
+    "host": "https://github.com/craigcomstocks/node-ffi/releases/download/",
     "remote_path": "{version}"
   },
   "repository": {
