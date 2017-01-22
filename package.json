@@ -36,6 +36,7 @@
   },
   "scripts": {
     "test": "node-gyp rebuild --directory test && mocha -gc --reporter spec",
+    "electron": "node-gyp rebuild --runtime=electron --target=1.4.4 --disturl=https://atom.io/download/atom-shell --build-from-source",
     "install": "echo",
     "build": "node-gyp rebuild"
   },
