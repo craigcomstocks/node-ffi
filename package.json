@@ -17,16 +17,16 @@
     "binding",
     "c"
   ],
-  "homepage": "http://github.com/craigcomstocks/node-ffi",
+  "homepage": "http://github.com/sencha/node-ffi",
   "engines": {
     "node": ">=0.10.0"
   },
   "main": "./lib/ffi",
   "dependencies": {
-    "bindings": "craigcomstocks/node-bindings#find-by-abi",
+    "bindings": "sencha/node-bindings#find-by-abi",
     "debug": "2",
     "nan": "2",
-    "ref": "craigcomstocks/ref#find-by-abi",
+    "ref": "sencha/ref#find-by-abi",
     "ref-struct": "1"
   },
   "devDependencies": {
@@ -42,9 +42,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/craigcomstocks/node-ffi.git"
+    "url": "https://github.com/sencha/node-ffi.git"
   },
   "bugs": {
-    "url": "http://github.com/craigcomstocks/node-ffi/issues"
+    "url": "http://github.com/sencha/node-ffi/issues"
   }
 }
